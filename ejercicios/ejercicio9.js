@@ -1,0 +1,29 @@
+"use strict";
+
+const {
+  generarDecimalAleatorio,
+  generarEnteroAleatorio,
+} = require("../utilities/randomUtilities");
+const calcularMediaGeometrica = (a, b, c, d) => {
+  const mg = Math.sqrt(Math.sqrt(a * b * c * d));
+  return mg;
+};
+
+const imprimirMensaje = (a, b, c, d, mediaGeometrica) => {
+  console.log(
+    `La media geometrica de los numeros ${a},${b},${c},${d} es ${mediaGeometrica.toFixed(
+      4
+    )}`
+  );
+};
+
+const min = 100;
+const max = 999;
+
+const a = generarEnteroAleatorio(min, max);
+const b = generarEnteroAleatorio(min, max);
+const c = generarEnteroAleatorio(min, max);
+const d = generarEnteroAleatorio(min, max);
+
+const mediaGeometrica = calcularMediaGeometrica(a, b, c, d);
+const imprimir = imprimirMensaje(a, b, c, d, mediaGeometrica);
