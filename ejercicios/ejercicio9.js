@@ -26,4 +26,4 @@ const c = generarEnteroAleatorio(min, max);
 const d = generarEnteroAleatorio(min, max);
 
 const mediaGeometrica = calcularMediaGeometrica(a, b, c, d);
-const imprimir = imprimirMensaje(a, b, c, d, mediaGeometrica);
+imprimirMensaje(a, b, c, d, mediaGeometrica);
