@@ -5,15 +5,13 @@ const {
   generarEnteroAleatorio,
 } = require("../utilities/randomUtilities");
 const calcularMediaGeometrica = (a, b, c, d) => {
-  const mg = Math.sqrt(Math.sqrt(a * b * c * d));
-  return mg;
+  return Math.sqrt(Math.sqrt(a * b * c * d));
 };
 
 const imprimirMensaje = (a, b, c, d, mediaGeometrica) => {
   console.log(
-    `La media geometrica de los numeros ${a},${b},${c},${d} es ${mediaGeometrica.toFixed(
-      4
-    )}`
+    `La media geometrica de los numeros ${a},${b},${c},${d} es
+     ${mediaGeometrica.toFixed(4)}`
   );
 };
 

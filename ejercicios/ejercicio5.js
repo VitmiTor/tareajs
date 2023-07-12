@@ -1,21 +1,18 @@
 "use strict";
 
+let hola = "hola";
 
-let hola="hola"
+let aloha = "aloha";
 
-let aloha="aloha"
+let computadora = "computadora";
 
-let computadora="computadora"
+const concat = (a, b, c) => {
+  return a + " " + b + " " + c + " " + "fin";
+};
 
+const imprimirMensaje = (mensaje) => {
+  console.log(mensaje);
+};
 
-const concat=(a,b,c)=>{
-    let concatenacion=a + " " + b + " " + c + " " + "fin";
-    return concatenacion; 
-}
-
-const imprimirMensaje=(mensaje)=>{
-    console.log(mensaje)
-}
-
-const message=concat(hola,aloha,computadora);
+const message = concat(hola, aloha, computadora);
 imprimirMensaje(message);

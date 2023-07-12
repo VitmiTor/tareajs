@@ -6,15 +6,13 @@ const {
 } = require("../utilities/randomUtilities");
 
 const imc = (peso, altura) => {
-  const imcCalculado = peso / Math.pow(altura, 2);
-  return imcCalculado;
+  return peso / Math.pow(altura, 2);
 };
 
 const imprimirMensaje = (peso, altura, IMC) => {
   console.log(
-    `El peso de ${peso.toFixed(2)} con la altura de ${altura.toFixed(
-      2
-    )} tiene el imc de ${IMC.toFixed(2)}`
+    `El peso de ${peso.toFixed(2)} con la altura de 
+    ${altura.toFixed(2)} tiene el imc de ${IMC.toFixed(2)}`
   );
 };
 

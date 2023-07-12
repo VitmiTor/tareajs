@@ -6,20 +6,17 @@ const {
 } = require("../utilities/randomUtilities");
 
 const area = (radio) => {
-  const a = Math.PI * radio;
-  return a;
+  return Math.PI * Math.pow(radio, 2);
 };
 
 const perimetro = (radio) => {
-  const p = Math.PI * radio * 2;
-  return p;
+  return Math.PI * radio * 2;
 };
 
 const imprimirMensaje = (area, perimetro, radio) => {
   console.log(
     `el radio de ${radio} tiene un perimetro de ${perimetro.toFixed(2)}
-    el area del radio de ${radio} es de ${area.toFixed(2)}
-    `
+    el area del radio de ${radio} es de ${area.toFixed(2)}`
   );
 };
 

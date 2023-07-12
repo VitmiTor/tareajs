@@ -1,4 +1,4 @@
-" use strict";
+"use strict";
 
 const {
   generarDecimalAleatorio,
@@ -10,9 +10,7 @@ const numCabezas = (vacas, gallinas) => {
 };
 
 const numPatas = (vacas, gallinas) => {
-  let numVacas = vacas * 4;
-  let numGallinas = gallinas * 2;
-  return numVacas + numGallinas;
+  return vacas * 4 + gallinas * 2;
 };
 
 const imprimirMensaje = (cabezas, patas, vacas, gallinas) => {
