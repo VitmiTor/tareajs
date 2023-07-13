@@ -1,9 +1,23 @@
 "use strict";
 
-const x=3;
-const y=9;
+/**
+ *
+ * @param {Number} min
+ * @param {Number} max
+ * @returns
+ */
+const generarEnteroAleatorio = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};
 
-let suma=x+y;
-const r=Math.sqrt(suma);
+/**
+ *ß
+ * @param {Number} min
+ * @param {Number} max
+ * @returns
+ */
+const generarDecimalAleatorio = (min, max) => {
+  return Math.random() * (max - min + 1) + min;
+};
 
-console.log(`mensaje ${r.toFixed(3)}`)
+module.exports = { generarDecimalAleatorio, generarEnteroAleatorio };
