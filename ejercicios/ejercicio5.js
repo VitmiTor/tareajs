@@ -1,10 +1,10 @@
 "use strict";
 
-let hola = "hola";
+const hola = "hola";
 
-let aloha = "aloha";
+const aloha = "aloha";
 
-let computadora = "computadora";
+const computadora = "computadora";
 
 const concat = (a, b, c) => {
   return a + " " + b + " " + c + " " + "fin";
